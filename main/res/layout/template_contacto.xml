@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivFoto" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:srcCompat="@drawable/foto_02"/>
+    <TextView
+            android:text="Marcos Rivas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Nombre" app:layout_constraintStart_toEndOf="@+id/ivFoto"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <TextView
+            android:text="Freelance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Empresa" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Nombre" app:layout_constraintStart_toEndOf="@+id/ivFoto"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintHorizontal_bias="0.0" android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+</android.support.constraint.ConstraintLayout>

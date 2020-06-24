@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/searchView"
+            android:icon="@drawable/ic_search_black_24dp"
+            app:showAsAction="always"
+            app:actionViewClass="android.widget.SearchView" android:title="@string/titulo_search"/>
+
+    <item
+            android:id="@+id/switchView"
+            app:showAsAction="always"
+            app:actionLayout="@layout/switch_item" android:title="@string/titulo_Switch"/>
+
+    <item android:id="@+id/itemNuevo" android:icon="@drawable/icono_nuevo"
+          android:title="@string/titulo_nuevoContacto" app:showAsAction="always"/>
+
+</menu>
